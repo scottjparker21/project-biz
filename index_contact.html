@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
@@ -13,8 +13,8 @@
 	<body>
 		<nav class="navbar navbar-inverse">
   			<div class="container-fluid">
-    			<div class="navbar-header">
-      				<a class="navbar-brand" href="#">Peel</a>
+    			<div class="navbar-header" id="navlogodiv">
+      				<a class="navbar-brand" href="#"><img src="img/logo.png" alt="Peel logo." id="navlogo"></a>
     			</div>
     			<div>
       				<ul class="nav navbar-nav">
@@ -26,12 +26,18 @@
     			</div>
   			</div>
 		</nav>
-		<div>
-			<form action="welcome.php" method="get">
-			Name: <input type="text" name="name"><br>
-			E-mail: <input type="text" name="email"><br>
-			<input type="submit">
-			</form>
+		<div class="form">
+		<h1>Contact Us</h1>
+		<form action="MAILTO:becky.gahart@gmail.com" method="post" enctype="text/plain">
+		Name:<br>
+		<input type="text" name="name" value=""><br>
+		E-mail:<br>
+		<input type="text" name="mail" svalue=""><br>
+		Comment:<br>
+		<input type="text" name="comment" value="" size="50"><br><br>
+		<input type="submit" value="Send">
+		<input type="reset" value="Reset">
+		</form>
 		</div>
 	</body>
 </html>
