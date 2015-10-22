@@ -1,6 +1,8 @@
-.mainText {
+.aboutText {
 	padding: 20px;
 	background: #ffffff;
+	border-radius: 5px;
+	margin: 10px;
 }
 
 #navlogo {
@@ -21,7 +23,10 @@ p {
 }
 
 #indiaImg {
-	margin-top: 15px;
+	width: 95%;
+	margin: 10px;
+	border-radius: 5px;
+	border: solid 1px black;
 }
 
 .form {
