@@ -28,3 +28,9 @@ p {
 	padding-left: 15px;
 	padding-right: 15px;
 }
+
+body {
+	background-color: rgba(254, 215, 0, 0.2);
+    background-image: url("../img/peelbackground.jpg");
+	background-repeat: repeat;
+}
