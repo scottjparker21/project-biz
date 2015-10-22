@@ -23,3 +23,9 @@ p {
 #indiaImg {
 	margin-top: 15px;
 }
+
+body {
+	  background-color: rgba(254, 215, 0, 0.2);
+    background-image: url("../img/peelbackground.jpg");
+		background-repeat: repeat;
+}
