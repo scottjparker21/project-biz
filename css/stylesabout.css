@@ -1,0 +1,25 @@
+.mainText {
+	padding: 20px;
+	background: #ffffff;
+}
+
+#navlogo {
+	width: 50px;
+}
+
+#navlogodiv {
+	margin-top: -15px;
+	margin-bottom: 15px;
+}
+
+h1 {
+	color: #daaa2f;
+}
+
+p {
+	color: #51514C;
+}
+
+#indiaImg {
+	margin-top: 15px;
+}
