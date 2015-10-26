@@ -3,15 +3,14 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width.initial-scale=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Peel | About</title>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-		<link rel="stylesheet" type="text/css" href="css/styles.css">
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
   		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-		<script src="jquery.js"></script>
-		<script src="bootstrap.js"></script>
+  		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Fugaz One">
 	</head>
 	<body>
 	<nav class="navbar navbar-inverse">
@@ -38,18 +37,73 @@
     		</div>
   		</div>
 	</nav>
-		<div class="col-lg-12">
-		<h1>No one does lemons like Peel does lemons.</h1>
-		</div>
-		<div class="row">
-			<div class="col-lg-8">
-				<div class="aboutText">
-				<p>Have you ever wondered about the secret behind the perfect glass of lemonade? The founders of Peel have. To answer their question, they traveled to India, the birthplace of the lemon. The Peel team believes in the 3 lemon laws as taught by the lemon masters of India: luminosity, lightness, and taste.</p>
-				</div>
-			</div>
-			<div class="col-lg-4"> 
-				<img src="img/India_About_yellow.jpg" id="indiaImg">
-			</div>
-		</div>
-	</body>
+	<div class="container">
+
+			<div class="aboutbox">
+				<h2>No one does lemons like Peel does lemons.</h2>
+				<p>Have you ever wondered about the secret behind the perfect glass of lemonade? The founders of Peel have. In fact, they've traveled all over the world, seeking out the most flavorful lemons and the most balanced lemonade recipes. The Peel team strives to live out the lemon laws taught by the lemon masters of world - it's our life's work to bring you the best glass of lemonade you've ever had.</p>
+				<p>The Peel Truck serves our fresh, homemade lemonade right in your neighborhood. For instant updates on our current location, follow us on Twitter or Instagram.</p>
+			</div> <!--end aboutbox-->
+
+		<div class="col-lg-4 col-lg-push-4 col-md-4 col-md-push-4 col-sm-4 col-sm-push-4 col-xs-8">
+			<img src="img/fact.jpg" alt="Lemonade in a jar with lemons next to it." class="aboutbottomimg" id="fact">
+			<div id="factText">
+				<h3>Did You Know?</h3>
+				<div id="one"><p>Lemons turn from green to yellow because of temperature changes, not ripeness, so green patches are OK, but avoid those with brown spots, which indicate rot. [credit: <a href="http://www.cookinglight.com/cooking-101/essential-ingredients/lemons-benefits-facts" target="_blank">CookingLight.com</a>]</p></div>
+				<div id="two"><p>One lemon contains a full day’s supply of ascorbic acid, or vitamin C, but that’s the whole fruit; the juice holds about a third. [credit: <a href="http://www.cookinglight.com/cooking-101/essential-ingredients/lemons-benefits-facts" target="_blank">CookingLight.com</a>]</p></div>
+				<div id="three"><p>Before juicing, roll a room-temperature lemon under your palm to break down the cells inside the fruit that hold liquid. [credit: <a href="http://www.cookinglight.com/cooking-101/essential-ingredients/lemons-benefits-facts" target="_blank">CookingLight.com</a>]</p></div>
+				<div id="four"><p>Lemons are nature’s top source of citric acid, a life essential found in the cells of all living creatures. [credit: <a href="http://limoneira.com/agribusiness/lemons/lemon-facts/" target="_blank">Limoneira.com</a>]</p></div>
+				<div id="five"><p>Lemons preserved in salt are a fragrant, distinctive flavoring in Moroccan and Middle Eastern stews, tagines, and other dishes. [credit: <a href="http://www.cookinglight.com/cooking-101/essential-ingredients/lemons-benefits-facts" target="_blank">CookingLight.com</a>]</p></div>
+			</div> <!--end facttext-->
+		</div> <!--end col-->
+
+		<div class="col-lg-4 col-lg-pull-4 col-md-4 col-md-pull-4 col-sm-4 col-sm-pull-4 col-xs-6">
+			<img src="img/lemons.jpg" alt="A lemon on a white table." class="aboutbottomimg">
+		</div> <!--end col-->
+
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-6"> 
+			<img src="img/warehouse.jpg" alt="People in a fruit warehouse." class="aboutbottomimg">
+		</div><!--end column-->
+	</div><!--end conatiner-->
+
+<!--fact generator-->
+<script>
+"use strict";
+var facts = ["one", "two", "three", "four", "five"];
+var x = 0;
+var firstloop = true;
+
+var show = function() {
+	/*for the first time through at x=0*/
+	if (x == 0 && firstloop) {
+		$("#"+facts[x]+" p").show();
+	}
+	/*for when x=0 after the first time through*/
+	else if (x == 0 && !firstloop) {
+		$("#"+facts[facts.length - 1]+" p").hide(); 
+		$("#"+facts[x]+" p").show();
+	}
+	/*hide prior fact*/
+	else {
+		$("#"+facts[x - 1]+" p").hide(); 
+		/*show new fact*/
+		$("#"+facts[x]+" p").show();
+	}
+
+	/*reset to first fact when x gets to end of array*/
+	if (x == facts.length - 1) {
+		x = 0;
+		firstloop = false;
+	}
+	else {
+		x++;
+	}
+}
+
+$(document).ready( function() {
+	$("#fact").click(show);
+});
+
+</script>
+</body>
 </html>

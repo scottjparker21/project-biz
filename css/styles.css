@@ -4,17 +4,14 @@
 	margin-bottom: 15px;
 }
 
-.aboutText {
-	margin: 10px;
+.aboutbox {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
 	background-color: #ffffff;
-	opacity: 0.2;
-	border-radius: 5px;
-}
-
-.aboutText p {
-	padding: 20px;
-	background: #ffffff;
-	color: #000000;
+	border: solid 1px #ebebeb;
+	margin-right: 15px;
+	margin-left: 15px;
 }
 
 h1 {
@@ -27,20 +24,48 @@ h2 {
 	text-shadow: 1px 1px 1px #aaa;
 }
 
+#factText h3 {
+	position: absolute;
+	top: 0px;
+	left: 25px;
+	font-family: 'Fugaz One', serif;
+	color: #ffffff;
+}
+
 p {
 	color: #51514C;
 }
 
-#indiaImg {
-	width: 95%;
-	margin: 10px;
-	border-radius: 5px;
-	border: solid 1px black;
+.aboutbottomimg {
+	border: solid 1px #ebebeb;
+	width: 100%;
+	margin-top: 15px;
+}
+
+/*@media screen and (max-width: )*/
+
+#factText p {
+	position: absolute;
+	top: 75px;
+	left: 25px;
+	padding-right: 25px;
+	text-align: center;
+	font-weight: bold;
+	display: none;
 }
 
 .form {
 	padding-left: 15px;
 	padding-right: 15px;
+}
+
+#contact {
+	border: solid 1px #ebebeb;
+	background-color: #ffffff;
+	border-radius: 2px;
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-top: 25px;
 }
 
 body {
