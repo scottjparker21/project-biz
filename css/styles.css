@@ -40,9 +40,22 @@ p {
 	border: solid 1px #ebebeb;
 	width: 100%;
 	margin-top: 15px;
+	margin-bottom: 20px;
 }
 
-/*@media screen and (max-width: )*/
+#fact {
+	border: solid 1px #ebebeb;
+	width: 100%;
+	margin-top: 15px;
+}
+
+@media screen and (max-width: 991px) {
+	#factcol {
+		max-width: 300px;
+		float: none;
+		margin: 0 auto;
+	}
+}
 
 #factText p {
 	position: absolute;
