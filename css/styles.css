@@ -57,7 +57,13 @@ p {
 	}
 }
 
-#factText p {
+@media screen and (min-width: 1200px) {
+	#zero p, #one p, #two p, #three p, #four p, #five p {
+		margin-top: 30px;
+	}
+}
+
+#one p, #two p, #three p, #four p, #five p {
 	position: absolute;
 	top: 75px;
 	left: 25px;
@@ -65,6 +71,22 @@ p {
 	text-align: center;
 	font-weight: bold;
 	display: none;
+	font-family: 'Fugaz One', serif;
+}
+
+#zero p {
+	position: absolute;
+	top: 75px;
+	left: 25px;
+	padding-right: 25px;
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Fugaz One', serif;
+}
+
+#factText a {
+	color: #daaa2f;
+	font-family: 'Fugaz One', serif;
 }
 
 .form {

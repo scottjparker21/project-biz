@@ -38,7 +38,6 @@
   		</div>
 	</nav>
 	<div class="container">
-
 			<div class="aboutbox">
 				<h2>No one does lemons like Peel does lemons.</h2>
 				<p>Have you ever wondered about the secret behind the perfect glass of lemonade? The founders of Peel have. In fact, they've traveled all over the world, seeking out the most flavorful lemons and the most balanced lemonade recipes. The Peel team strives to live out the lemon laws taught by the lemon masters of world - it's our life's work to bring you the best glass of lemonade you've ever had.</p>
@@ -49,12 +48,12 @@
 			<img src="img/fact.jpg" alt="Lemonade in a jar with lemons next to it." id="fact">
 			<div id="factText">
 				<h3>Did You Know?</h3>
-				<div id="zero"><p>Click for Peel's lemon facts.</p></div>
-				<div id="one"><p>The juice of half a lemon in warm water morning, noon, and night helps eliminate toxins and ease aches.<br>[credit: <a href="http://limoneira.com/agribusiness/lemons/lemon-facts/" target="_blank">Limoneira.com</a>]</p></div>
-				<div id="two"><p>One lemon contains a full day’s supply of ascorbic acid, or vitamin C; the juice holds about a third.<br>[credit: <a href="http://www.cookinglight.com/cooking-101/essential-ingredients/lemons-benefits-facts" target="_blank">CookingLight.com</a>]</p></div>
-				<div id="three"><p>Before juicing, roll lemon under your palm to break down the cells inside the fruit that hold liquid.<br>[credit: <a href="http://www.cookinglight.com/cooking-101/essential-ingredients/lemons-benefits-facts" target="_blank">CookingLight.com</a>]</p></div>
-				<div id="four"><p>Lemons are nature’s top source of citric acid, a life essential found in the cells of all living creatures.<br>[credit: <a href="http://limoneira.com/agribusiness/lemons/lemon-facts/" target="_blank">Limoneira.com</a>]</p></div>
-				<div id="five"><p>Sprinkle lemons with water and refrigerate in a plastic bag, lemons will last a month or more frozen.<br>[credit: <a href="http://limoneira.com/agribusiness/lemons/lemon-facts/" target="_blank">Limoneira.com</a>]</p></div>
+				<div id="zero"><p>Peel is committed to lemon education. Click for lemon facts!</p></div>
+				<div id="one"><p>The juice of half a lemon in warm water morning, noon, and night helps eliminate toxins and ease aches.<br>(Source: <a href="http://limoneira.com/agribusiness/lemons/lemon-facts/" target="_blank">Limoneira.com</a>)</p></div>
+				<div id="two"><p>One lemon contains a full day’s supply of ascorbic acid, or vitamin C; the juice holds about a third.<br>(Source: <a href="http://www.cookinglight.com/cooking-101/essential-ingredients/lemons-benefits-facts" target="_blank">CookingLight.com</a>)</p></div>
+				<div id="three"><p>Before juicing, roll lemon under your palm to break down the cells inside the fruit that hold liquid.<br>(Source: <a href="http://www.cookinglight.com/cooking-101/essential-ingredients/lemons-benefits-facts" target="_blank">CookingLight.com</a>)</p></div>
+				<div id="four"><p>Lemons are nature’s top source of citric acid, a life essential found in the cells of all living creatures.<br>(Source: <a href="http://limoneira.com/agribusiness/lemons/lemon-facts/" target="_blank">Limoneira.com</a>)</p></div>
+				<div id="five"><p>Sprinkle lemons with water and refrigerate in a plastic bag, lemons will last a month or more frozen.<br>(Source: <a href="http://limoneira.com/agribusiness/lemons/lemon-facts/" target="_blank">Limoneira.com</a>)</p></div>
 			</div> <!--end facttext-->
 		</div> <!--end col-->
 
@@ -77,6 +76,7 @@ var firstloop = true;
 var show = function() {
 	/*for the first time through at x=0*/
 	if (x == 0 && firstloop) {
+		$("#zero p").hide();
 		$("#"+facts[x]+" p").show();
 	}
 	/*for when x=0 after the first time through*/
